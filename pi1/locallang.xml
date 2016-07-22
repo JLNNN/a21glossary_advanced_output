@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_a21glossaryadvancedoutput_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="all_chars">Entire glossary</label>
+			<label index="search">Search for term:</label>
+			<label index="search_button">Search</label>
+			<label index="type.span">Item for:</label>
+			<label index="type.dfn">Definition:</label>
+			<label index="type.acronym">Acronym:</label>
+			<label index="type.abbr">Abbreviation:</label>
+			<label index="browseresults.prev">&lt; Previous</label>
+			<label index="browseresults.next">Next &gt;</label>
+			<label index="browseresults.page">Page</label>
+			<label index="browseresults.displays">Displaying results %s to %s out of %s</label>
+			<label index="browseresults.noResult">Sorry, no items were found.</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="all_chars">Gesamtes Glossar</label>
+			<label index="search">Begriff suchen:</label>
+			<label index="search_button">Suchen</label>
+			<label index="type.span">Begriff für:</label>
+			<label index="type.dfn">Definition:</label>
+			<label index="type.acronym">Akronym für:</label>
+			<label index="type.abbr">Abkürzung für:</label>
+			<label index="browseresults.prev">&lt; zurück</label>
+			<label index="browseresults.next">vor &gt;</label>
+			<label index="browseresults.page">Seite</label>
+			<label index="browseresults.displays">Einträge %s bis %s von %s</label>
+			<label index="browseresults.noResult">Keine Einträge gefunden.</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,15 @@
+plugin.tx_a21glossaryadvancedoutput_pi1 {
+	templateFile = {$plugin.a21glossary_advanced_output.templateFile}
+	recordsStorageAt = {$plugin.a21glossary_advanced_output.recordsStorageAt}
+	recordsStorageAtRecursiveDeep = {$plugin.a21glossary_advanced_output.recordsStorageAtRecursiveDeep}
+	hideNavAtSearch = {$plugin.a21glossary_advanced_output.hideNavAtSearch}
+	hideEmptyNavItems = {$plugin.a21glossary_advanced_output.hideEmptyNavItems}
+	disablePageBrowser = {$plugin.a21glossary_advanced_output.disablePageBrowser}
+	results_per_page = {$plugin.a21glossary_advanced_output.results_per_page}
+	spacer = {$plugin.a21glossary_advanced_output.spacer}
+	startChar = {$plugin.a21glossary_advanced_output.startChar}
+	pageBrowserRange = {$plugin.a21glossary_advanced_output.pageBrowserRange}
+	useAreaNavigation = {$plugin.a21glossary_advanced_output.useAreaNavigation}
+	areaNavigation = {$plugin.a21glossary_advanced_output.areaNavigation}
+	showResultCount = {$plugin.a21glossary_advanced_output.showResultCount}
+}

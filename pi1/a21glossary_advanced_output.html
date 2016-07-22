@@ -1,0 +1,115 @@
+<h1># a21glossary_advanced_output Template File #</h1>
+<h2>Templatecode:</h2>
+<span>Marker: ###SHOW_SELECTED_CHAR###</span>
+
+
+<!-- ###VIEW_GLOSSARY### begin-->
+	###SHOW_SEARCH_FORM###
+	###SHOW_NAV_BAR###
+	###SHOW_GLOSSARY_RESULT###	
+	###SHOW_BROWSE_LINKS###
+<!-- ###VIEW_GLOSSARY### end-->
+
+
+
+
+<!-- ###VIEW_SELECTED_CHAR### begin-->
+<div class="selectedChar">
+    ###SHOW_CHAR###
+</div>
+<!-- ###VIEW_SELECTED_CHAR### end-->
+
+
+
+
+
+
+<h1># Display SearchForm #</h1>
+<h2>Templatecode:</h2>
+
+<!-- ###VIEW_SEARCH_FORM### begin-->
+<div class="searchform">
+    
+	###FORM_START###
+	<p>
+	###LL_SEARCH###
+	<input type="text" name="tx_a21glossaryadvancedoutput_pi1[search]" id="glossarysearch" />
+	<input type="image" src="fileadmin/templates/img/de/form-search.gif" class="submit" value="###LL_SEARCH_BUTTON###" />
+	</p>
+	###FORM_END###
+	
+</div>
+<!-- ###VIEW_SEARCH_FORM### end-->
+
+
+
+<!-- To enable jquery autocomplete move that lines direct after the ###FORM_END### -->
+	<link rel="stylesheet" type="text/css" href="/typo3conf/ext/a21glossary_advanced_output/res/jquery.autocomplete.css" media="all" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/typo3conf/ext/a21glossary_advanced_output/res/jquery.autocomplete.min.js"></script>
+	<script type="text/javascript">
+	jQuery.noConflict();
+	jQuery("#glossarysearch").autocomplete("/?eID=a21glossary_advanced_output", {
+		width: 320,
+		max: 4,
+		highlight: false,
+		scroll: true,
+		scrollHeight: 300,
+		formatItem: function(data, i, n, value) {
+			return value.split(".")[0];
+		},
+		formatResult: function(data, value) {
+			return value.split(".")[0];
+		}
+	});
+	</script>
+<!-- end jquery autocomplete -->
+
+
+
+
+
+
+
+<h1># Display NavBar #</h1>
+<h2>Templatecode:</h2>
+
+<!-- ###VIEW_NAV_BAR### begin-->
+<div class="navbar">
+
+	<!-- ###LIST_CHARS### begin-->		
+		<a href="###LINK_TO_CHAR###"###AKTIV_CHAR_CLASS###>###SHOW_CHAR###</a>
+	<!-- ###LIST_CHARS### end-->
+
+	<a href="###LINK_TO_ALL###"###AKTIV_CHAR_CLASS### rel="nofollow">###SHOW_ALL_LABEL###</a>
+	
+</div>
+<!-- ###VIEW_NAV_BAR### end-->
+
+
+
+
+<h1># Display Result #</h1>
+<h2>Templatecode:</h2>
+
+<!-- ###VIEW_GLOSSARY_RESULT### begin-->
+<div class="result">
+
+	<dl class="glossary">
+	<!-- ###LIST_RESULT### begin-->		
+		<dt><a name="###SECTION###"></a>###SHORT_WORD###</dt>
+  		<dd>###SHORT_TYPE### <strong>###LONG_VERSION###</strong> ###LONG_DESCRIPTION###</dd>
+	<!-- ###LIST_RESULT### end-->
+	</dl>
+    	
+</div>
+<!-- ###VIEW_GLOSSARY_RESULT### end-->
+
+
+
+<h1># Display PageBrowser #</h1>
+<h2>Templatecode:</h2>
+
+<!-- ###VIEW_BROWSE_LINKS### begin-->
+	###BROWSE_LINKS###
+<!-- ###VIEW_BROWSE_LINKS### end-->

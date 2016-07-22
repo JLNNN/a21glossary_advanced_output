@@ -1,0 +1,86 @@
+<h1># a21glossary_advanced_output Template File #</h1>
+<h2>Templatecode:</h2>
+<span>Marker: ###SHOW_SELECTED_CHAR###</span>
+
+<!-- ###VIEW_GLOSSARY### begin-->
+	###SHOW_SEARCH_FORM###
+	###SHOW_NAV_BAR###
+	###SHOW_GLOSSARY_RESULT###	
+	<!--TYPO3SEARCH_end-->###SHOW_BROWSE_LINKS###<!--TYPO3SEARCH_begin--> 
+<!-- ###VIEW_GLOSSARY### end-->
+
+
+
+
+<!-- ###VIEW_SELECTED_CHAR### begin-->
+<div class="selectedChar">
+    ###SHOW_CHAR###
+</div>
+<!-- ###VIEW_SELECTED_CHAR### end-->
+
+
+
+
+<h1># Display SearchForm #</h1>
+<h2>Templatecode:</h2>
+
+<!-- ###VIEW_SEARCH_FORM### begin-->
+<div class="searchform">
+    
+	###FORM_START###
+	<p>
+	###LL_SEARCH###
+	<input type="text" name="tx_a21glossaryadvancedoutput_pi1[search]" />
+	<input type="image" src="fileadmin/templates/img/de/form-search.gif" class="submit" value="###LL_SEARCH_BUTTON###" />
+	</p>
+	###FORM_END###
+</div>
+<!-- ###VIEW_SEARCH_FORM### end-->
+
+
+
+
+<h1># Display NavBar #</h1>
+<h2>Templatecode:</h2>
+
+<!-- ###VIEW_NAV_BAR### begin-->
+<div class="navbar">
+
+	<!-- ###LIST_CHARS### begin-->
+		<!--TYPO3SEARCH_end-->
+		<a href="###LINK_TO_CHAR###"###AKTIV_CHAR_CLASS###>###SHOW_CHAR###</a>
+		<!--TYPO3SEARCH_begin-->
+	<!-- ###LIST_CHARS### end-->
+
+	<a href="###LINK_TO_ALL###"###AKTIV_CHAR_CLASS### rel="nofollow">###SHOW_ALL_LABEL###</a>
+	
+</div>
+<!-- ###VIEW_NAV_BAR### end-->
+
+
+
+
+<h1># Display Result #</h1>
+<h2>Templatecode:</h2>
+
+<!-- ###VIEW_GLOSSARY_RESULT### begin-->
+<div class="result">
+
+	<dl class="glossary">
+	<!-- ###LIST_RESULT### begin-->		
+		<dt><a name="###SECTION###"></a>###SHORT_WORD###</dt>
+  		<dd>###SHORT_TYPE### <strong>###LONG_VERSION###</strong> ###LONG_DESCRIPTION###</dd>
+	<!-- ###LIST_RESULT### end-->
+	</dl>
+    	
+</div>
+<!-- ###VIEW_GLOSSARY_RESULT### end-->
+
+
+
+<h1># Display PageBrowser #</h1>
+<h2>Templatecode:</h2>
+
+<!-- ###VIEW_BROWSE_LINKS### begin-->
+	###BROWSE_LINKS###
+<!-- ###VIEW_BROWSE_LINKS### end-->

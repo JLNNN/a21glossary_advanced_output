@@ -1,0 +1,47 @@
+###
+# This are the default TS-constants for 'A21glossary Advanced Output'
+###
+
+plugin.a21glossary_advanced_output {
+
+
+    # cat=plugin.a21glossary_advanced_output/enable/10; type=boolean; label=Hide Nav at Search: Hide the Nav Bar if a user get the Search Result.
+    hideNavAtSearch = 0
+    
+    # cat=plugin.a21glossary_advanced_output/enable/20; type=boolean; label=Hide Empty Nav Items: Hide Nav Bar Items with no content. Do not work with the Area Navigation
+    hideEmptyNavItems = 0
+
+    # cat=plugin.a21glossary_advanced_output/enable/30; type=boolean; label=Disable Page Browser: Don´t display the Pagebrowser. All Items where shown.
+    disablePageBrowser = 0
+	
+	# cat=plugin.a21glossary_advanced_output/enable/40; type=boolean; label=Use Area Navigation: Use the area configuration
+    useAreaNavigation = 0
+	
+	# cat=plugin.a21glossary_advanced_output/enable/50; type=boolean; label=Show Result count: Display the result count
+    showResultCount = 1
+	    
+
+    # cat=plugin.a21glossary_advanced_output//10; type=file[html,htm,tmpl,txt]; label=Template File: HTML-template file for a21glossary_advanced_output.
+    templateFile = EXT:a21glossary_advanced_output/pi1/a21glossary_advanced_output.html
+    
+    # cat=plugin.a21glossary_advanced_output//15; type=text; label=Records Storage at: The Page IDs of the sysFolders with the a21glossary records. (separated by ,)
+    recordsStorageAt = 0
+    
+    # cat=plugin.a21glossary_advanced_output//20; type=int+; label=Recursive Deep: The Levels for the Recursive fetch
+    recordsStorageAtRecursiveDeep = 0
+
+    # cat=plugin.a21glossary_advanced_output//25; type=int+; label=Page Browser Range: Pages next and before the current page
+    pageBrowserRange = 4
+	
+	# cat=plugin.a21glossary_advanced_output//30; type=int+; label=Results per Page: Number of Items shown on Page.
+    results_per_page = 20
+	
+	# cat=plugin.a21glossary_advanced_output//35; type=text; label=Spacer: Charakter between Items in Pagebrowser.
+    spacer = &nbsp;	
+	
+	# cat=plugin.a21glossary_advanced_output//40; type=text; label=Start Char: The Start Char. a,b,c,d.... or all
+    startChar = all		
+	
+	# cat=plugin.a21glossary_advanced_output//45; type=text; label=Area Navigation: The configuration of the area navigation
+    areaNavigation = A - D,E - M,N - Z	
+}
